@@ -11,10 +11,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
+        
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     </head>
     <body>
+         
+<script type='text/javascript'>
+function toggleMenu( id )
+{
+  var o=document.getElementById( id );
+  o.style.display=
+    (o.style.display=='none') ? '' : 'none';
+}
+function hideMenu( id )
+{
+  var o=document.getElementById( id ).getElementsByTagName('ul');
+  for( var i=0; i < o.length; i++)
+    o[i].style.display='none';
+}
+hideMenu('menus');
+</script>
 
         <!-- Header -->
         <div id="header">
@@ -46,7 +63,10 @@
                     <ul>
                         <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                         <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                        <li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Education</span></a></li>
+                        <li><a href="javascript:viod(0)" id="education-link" class="skel-layers-ignoreHref" onclick='toggleMenu("m1")'><span class="icon fa-university">Education</span></a>
+                            
+                                <li><a href="#USC" id="m1" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a></li>
+                        </li>
                         <li><a href="#experience" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Work Experience</span></a></li>
                         <li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
                         <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -122,7 +142,7 @@
                         <div class="2u">
                             <span class="image fit"><a href="http://www.usc.edu/"><img src="images/USC.png" alt=""/></a></span>
                         </div>
-                        <div class="9u">
+                        <div class="9u" id="USC">
                             <h3 align=left><strong>University of Southern California</strong></h3>
                             <h1 align=left>Computer Science (Intelligent Robotics), Viterbi School of Engineering</h1>
                             <h1 align=left>Master of Science, 2015 - 2017</h1>
@@ -133,7 +153,7 @@
                         <div class="2u">
                             <span class="image fit"><a href="http://www.ntu.edu.tw/"><img src="images/NTU.png" alt=""/></a></span>
                         </div>
-                        <div class="9u">
+                        <div class="9u" id="NTU">
                             <h3 align=left><strong>National Taiwan University</strong></h3>
                             <h1 align=left>Computer Science & Information Engineering, College of Electrical Engineering and Computer Science (EECS)</h1>
                             <h1 align=left>Bachelor of Science, 2008 - 2012</h1>
