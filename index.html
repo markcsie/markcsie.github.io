@@ -11,27 +11,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
         <link rel="stylesheet" href="assets/css/main.css" />
-        
+
         <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
         <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
     </head>
     <body>
-         
-<script type='text/javascript'>
-function toggleMenu( id )
-{
-  var o=document.getElementById( id );
-  o.style.display=
-    (o.style.display=='none') ? '' : 'none';
-}
-function hideMenu( id )
-{
-  var o=document.getElementById( id ).getElementsByTagName('ul');
-  for( var i=0; i < o.length; i++)
-    o[i].style.display='none';
-}
-hideMenu('menus');
-</script>
+
+        <script type='text/javascript'>
+            function toggleMenu(id) {
+                var o = document.getElementById(id);
+                o.style.display = (o.style.display == 'none') ? '' : 'none';
+            }
+        </script>
 
         <!-- Header -->
         <div id="header">
@@ -63,10 +54,13 @@ hideMenu('menus');
                     <ul>
                         <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                         <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                        <li><a href="javascript:viod(0)" id="education-link" class="skel-layers-ignoreHref" onclick='toggleMenu("m1")'><span class="icon fa-university">Education</span></a>
-                            
-                                <li><a href="#USC" id="m1" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a></li>
+                        <li><a href="javascript:void(0)" id="education-link" class="skel-layers-ignoreHref" onclick='toggleMenu("submenu")' ><span class="icon fa-university">Education</span></a>
+                            <div id="submenu">
+                                <a href="#USC" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a>
+                                <a href="#USC" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a>
+                            </div>
                         </li>
+
                         <li><a href="#experience" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Work Experience</span></a></li>
                         <li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
                         <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
@@ -203,7 +197,7 @@ hideMenu('menus');
                     <header>
                         <h2>Projects</h2>
                     </header>
-                    
+
                     <div class="row">
                         <div class="2u">
                             <span class="image fit"><a href="https://www.csie.ntu.edu.tw/~bobwang/RoboCupSPL/"><img src="images/NTURobotPal.png" alt=""/></a></span>
