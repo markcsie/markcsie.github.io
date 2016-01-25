@@ -17,12 +17,12 @@
     </head>
     <body>
 
-        <script type='text/javascript'>
+<!--        <script type='text/javascript'>
             function toggleMenu(id) {
                 var o = document.getElementById(id);
                 o.style.display = (o.style.display == 'none') ? '' : 'none';
             }
-        </script>
+        </script>-->
 
         <!-- Header -->
         <div id="header">
@@ -54,15 +54,15 @@
                     <ul>
                         <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
                         <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                        <li><a href="javascript:void(0)" id="education-link" class="skel-layers-ignoreHref" onclick='toggleMenu("submenu")' ><span class="icon fa-university">Education</span></a>
-                            <div id="submenu">
-                                <a href="#USC" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a>
-                                <a href="#USC" class="skel-layers-ignoreHref"><span class="icon fa-university">USC</span></a>
-                            </div>
-                        </li>
-
-                        <li><a href="#experience" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Work Experience</span></a></li>
-                        <li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Projects</span></a></li>
+                        <li><a href="#education" id="education-link" class="skel-layers-ignoreHref"><span class="icon fa-university">Education</span></a></li>
+                        <li><a href="#experience" id="experience-link" class="skel-layers-ignoreHref"><span class="icon fa-user">Work Experience</span></a></li>
+                        <li><a href="#projects" id="projects-link" class="skel-layers-ignoreHref" ><span class="icon fa-th">Projects</span></a></li>
+                        <!--<div id="submenu">-->
+                        <li><a href="#robocup" id="robocup-link" class="skel-layers-ignoreHref"><span>Robocup</span></a></li>
+                        <li><a href="#ekf" id="ekf-link" class="skel-layers-ignoreHref"><span>Extended Kalman Filter</span></a></li>
+                        <li><a href="#er7" id="er7-link" class="skel-layers-ignoreHref"><span>ER7 Robot Arm</span></a></li>
+                        <li><a href="#maze" id="maze-link" class="skel-layers-ignoreHref"><span>Pioneer 3DX</span></a></li>
+                        <!--</div>-->
                         <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
                     </ul>
                 </nav>
@@ -93,11 +93,10 @@
                             <a target="_blank" href="http://www.cs.usc.edu/academics/masters/robotics.htm">intelligent robotics</a> at
                             <a target="_blank" href="http://www.cs.usc.edu/">Department of Computer Science</a> at 
                             <a target="_blank" href="http://www.usc.edu/">University of Southern California</a>.</h2>
-                        <p>!!!!!!!!!!!!!</p>
                     </header>
 
                     <footer>
-                        <a href="#about" class="button scrolly">!!!!!</a>
+                        <a href="documents/Resume.pdf" class="button scrolly">Resume</a>
                     </footer>
 
                 </div>
@@ -134,7 +133,7 @@
 
                     <div class="row">
                         <div class="2u">
-                            <span class="image fit"><a href="http://www.usc.edu/"><img src="images/USC.png" alt=""/></a></span>
+                            <span class="image fit"><a target="_blank" href="http://www.usc.edu/"><img src="images/USC.png" alt=""/></a></span>
                         </div>
                         <div class="9u" id="USC">
                             <h3 align=left><strong>University of Southern California</strong></h3>
@@ -145,7 +144,7 @@
                     </div>
                     <div class="row">
                         <div class="2u">
-                            <span class="image fit"><a href="http://www.ntu.edu.tw/"><img src="images/NTU.png" alt=""/></a></span>
+                            <span class="image fit"><a target="_blank" href="http://www.ntu.edu.tw/"><img src="images/NTU.png" alt=""/></a></span>
                         </div>
                         <div class="9u" id="NTU">
                             <h3 align=left><strong>National Taiwan University</strong></h3>
@@ -166,7 +165,7 @@
 
                     <div class="row">
                         <div class="2u">
-                            <span class="image fit"><a href="http://robotics.usc.edu/resl/"><img src="images/USC.png" alt=""/></a></span>
+                            <span class="image fit"><a target="_blank" href="http://robotics.usc.edu/resl/"><img src="images/USC.png" alt=""/></a></span>
                         </div>
 
                         <div class="9u">
@@ -178,7 +177,7 @@
 
                     <div class="row">
                         <div class="2u">
-                            <span class="image fit"><a href="http://www.cyberlink.com/"><img src="images/Cyberlink.png" alt=""/></a></span>
+                            <span class="image fit"><a target="_blank" href="http://www.cyberlink.com/"><img src="images/Cyberlink.png" alt=""/></a></span>
                         </div>
 
                         <div class="9u">
@@ -186,6 +185,8 @@
                             <h1 align=left>PowerDVD team, Department of Media Entertainment</h1>
                             <h1 align=left>Software Engineer, Aug 2012 - Mar 2014</h1>
                         </div>
+                        
+                        <img src="images/powerdvd13.jpg" alt=""/>
                     </div>
                 </div>
             </section>
@@ -200,67 +201,54 @@
 
                     <div class="row">
                         <div class="2u">
-                            <span class="image fit"><a href="https://www.csie.ntu.edu.tw/~bobwang/RoboCupSPL/"><img src="images/NTURobotPal.png" alt=""/></a></span>
+                            <span class="image fit"><a target="_blank" href="https://www.csie.ntu.edu.tw/~bobwang/RoboCupSPL/"><img src="images/NTURobotPal.png" alt=""/></a></span>
                         </div>
 
-                        <div class="9u">
-                            <h3 align=left><strong>NTU RobotPal Team</strong></h3>
+                        <div class="9u" id="robocup">
+                            <h3 align=left>NTU RobotPal Team for <a target="_blank" href="http://www.informatik.uni-bremen.de/spl/bin/view/Website/WebHome">RoboCup Standard Platform League</a> (Sep 2011 - Jun 2012, Sep 2014 - Feb 2015)</h3>
                             <h1 align=left>Computer Science & Information Engineering, College of Electrical Engineering and Computer Science (EECS)</h1>
-                            <h1 align=left>Researcher & Developer, Sep 2011 - Jun 2012, Sep 2014 - Feb 2015</h1>
-                            <h1 align=left>GPA: 3.66/4.0</h1>
+                            <h1 align=left>Researcher & Developer</h1>
+                            <img src="images/Projects/BallDetection.png" alt=""/>
+                            <h4> Ball Detection</h4>
+                            <img src="images/Projects/GoalDetection.png" alt=""/>
+                            <h4> Goal Post Detection</h4>
+                            <img src="images/Projects/SonarObstacleDetection.png" alt=""/>
+                            <h4> Sonar-Based Obstacle Detection via Occupancy Grid Mapping </h4>
+                            <img src="images/Projects/Team@MexicoCity2012.jpg" alt=""/>
+                            <h4> Members: (Left to right) Chih-Chung Chou, Chieh-Chih (Bob) Wang (Advisor), Chun-Kai Chang, Bang-Cheng Wang, Chun-Hua (Alan) Chang, and <strong>Kai-Chieh Ma</strong></h4>
+                            <a target="_blank" href="http://markcsie.github.io/documents/2012-NTURoboPAL_TDP.pdf">Team Description Paper (May 8, 2012)</a>
                         </div>
+                        
+                            <h3 align=left>Extended Kalman Filter Localization (Dec 2011 – Feb 2012)</h3>
+                        
+                            <img src="images/Projects/fig001.png" alt=""/>
+                            <img src="images/Projects/fig050.png" alt=""/>
+                            <img src="images/Projects/fig100.png" alt=""/>
+                            <img src="images/Projects/fig150.png" alt=""/>
+                            <img src="images/Projects/fig200.png" alt=""/>
+                            <img src="images/Projects/fig250.png" alt=""/>
+                        
+                        
+                        <div class="9u" id ="er7">
+                            <h3 align=left>Controlled ER7 robot arm to grab and stack bricks. (2011)</h3>
+                        </div>
+                            <img src="images/Projects/ER7 bricks.jpg" alt=""/>
+                            <img src="images/Projects/ER7.jpg" alt=""/>
+                        
+                        
+                        <div class="9u" id = "maze">
+                            <h3 align=left>Maze Exploring by Pioneer 3DX (2011)</h3>
+                        </div>
+                            <img src="images/Projects/maze.jpg" alt=""/>
+                            <img src="images/Projects/Pioneer 3DX.jpg" alt=""/>
+                            <br>
+                            <a target="_blank" href="http://markcsie.github.io/documents/RoboticsFinalProjectReport.pdf">Report paper</a>
+                        
+                        
+                        
+                        
+                        
                     </div>
-
-                    <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-                        egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-                        Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-                        fusce hendrerit lacus ridiculus.</p>
-
-                    <div class="row">
-                        <div class="4u 12u$(mobile)">
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Ipsum Feugiat</h3>
-                                </header>
-                            </article>
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Rhoncus Semper</h3>
-                                </header>
-                            </article>
-                        </div>
-                        <div class="4u 12u$(mobile)">
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Magna Nullam</h3>
-                                </header>
-                            </article>
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Natoque Vitae</h3>
-                                </header>
-                            </article>
-                        </div>
-                        <div class="4u$ 12u$(mobile)">
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Dolor Penatibus</h3>
-                                </header>
-                            </article>
-                            <article class="item">
-                                <a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-                                <header>
-                                    <h3>Orci Convallis</h3>
-                                </header>
-                            </article>
-                        </div>
-                    </div>
-
                 </div>
             </section>
 
