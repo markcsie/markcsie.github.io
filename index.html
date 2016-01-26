@@ -17,12 +17,12 @@
     </head>
     <body>
 
-<!--        <script type='text/javascript'>
-            function toggleMenu(id) {
-                var o = document.getElementById(id);
-                o.style.display = (o.style.display == 'none') ? '' : 'none';
-            }
-        </script>-->
+        <!--        <script type='text/javascript'>
+                    function toggleMenu(id) {
+                        var o = document.getElementById(id);
+                        o.style.display = (o.style.display == 'none') ? '' : 'none';
+                    }
+                </script>-->
 
         <!-- Header -->
         <div id="header">
@@ -103,7 +103,7 @@
             </section>
 
             <!-- About Me -->
-            <section id="about" class="three">
+            <section id="about" class="two">
                 <div class="container">
 
                     <header>
@@ -157,7 +157,7 @@
             </section>
 
             <!-- Work Experience -->
-            <section id="experience" class="three">
+            <section id="experience" class="four">
                 <div class="container">
                     <header>
                         <h2>Work Experience</h2>
@@ -181,12 +181,11 @@
                         </div>
 
                         <div class="9u">
-                            <h3 align=left><strong>Cyberlink Corp.</strong></h3>
+                            <h3 align=left><strong>Cyberlink Corp.</strong> <img align=right src="images/powerdvd13.jpg" alt=""/></h3>
                             <h1 align=left>PowerDVD team, Department of Media Entertainment</h1>
                             <h1 align=left>Software Engineer, Aug 2012 - Mar 2014</h1>
                         </div>
                         
-                        <img src="images/powerdvd13.jpg" alt=""/>
                     </div>
                 </div>
             </section>
@@ -200,86 +199,92 @@
                     </header>
 
                     <div class="row">
-                        <div class="2u">
-                            <span class="image fit"><a target="_blank" href="https://www.csie.ntu.edu.tw/~bobwang/RoboCupSPL/"><img src="images/NTURobotPal.png" alt=""/></a></span>
-                        </div>
-
-                        <div class="9u" id="robocup">
+                        <div id="robocup">
                             <h3 align=left>NTU RobotPal Team for <a target="_blank" href="http://www.informatik.uni-bremen.de/spl/bin/view/Website/WebHome">RoboCup Standard Platform League</a> (Sep 2011 - Jun 2012, Sep 2014 - Feb 2015)</h3>
                             <h1 align=left>Computer Science & Information Engineering, College of Electrical Engineering and Computer Science (EECS)</h1>
                             <h1 align=left>Researcher & Developer</h1>
-                            <img src="images/Projects/BallDetection.png" alt=""/>
-                            <h4> Ball Detection</h4>
-                            <img src="images/Projects/GoalDetection.png" alt=""/>
-                            <h4> Goal Post Detection</h4>
-                            <img src="images/Projects/SonarObstacleDetection.png" alt=""/>
-                            <h4> Sonar-Based Obstacle Detection via Occupancy Grid Mapping </h4>
-                            <img src="images/Projects/Team@MexicoCity2012.jpg" alt=""/>
-                            <h4> Members: (Left to right) Chih-Chung Chou, Chieh-Chih (Bob) Wang (Advisor), Chun-Kai Chang, Bang-Cheng Wang, Chun-Hua (Alan) Chang, and <strong>Kai-Chieh Ma</strong></h4>
-                            <a target="_blank" href="http://markcsie.github.io/documents/2012-NTURoboPAL_TDP.pdf">Team Description Paper (May 8, 2012)</a>
+                            <div>
+                                <table border="0">
+                                    <tr>
+                                        <td align="center"><a target="_blank" href="https://www.csie.ntu.edu.tw/~bobwang/RoboCupSPL/"><img height="300" width="340" src="images/NTURobotPal.png" alt=""/></a></td>
+                                        <td align="center"><img src="images/Projects/BallDetection.png" alt=""/></td>
+                                        <td align="center"><img src="images/Projects/GoalDetection.png" alt=""/></td>
+                                        <td align="center"><img src="images/Projects/SonarObstacleDetection.png" alt=""/></td>
+                                        <td align="center"><img src="images/Projects/Team@MexicoCity2012.jpg" alt=""/></td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">Team NTU Robot Pal</td>
+                                        <td align="center">Ball Detection</td>
+                                        <td align="center">Goal Post Detection</td>
+                                        <td align="center">Sonar-Based Obstacle Detection via Occupancy Grid Mapping</td>
+                                        <td align="center">Members: (Left to right) Chih-Chung Chou, Chieh-Chih (Bob) Wang (Advisor), Chun-Kai Chang, Bang-Cheng Wang, Chun-Hua (Alan) Chang, and <strong>Kai-Chieh Ma</strong></td>
+                                    </tr>
+                                </table>
+                                <a target="_blank" href="http://markcsie.github.io/documents/2012-NTURoboPAL_TDP.pdf">Team Description Paper (May 8, 2012)</a>
+                            </div>
                         </div>
+
                         
-                        <div id ="Kalman">
-                            <h3 align=left>Extended Kalman Filter Localization (Dec 2011 – Feb 2012)</h3>
-                            <table border="0">
-                              <tr>
-                                <td align="center"><img src="images/Projects/fig001.png" alt=""/></td>
-                                <td align="center"><img src="images/Projects/fig050.png" alt=""/></td>
-                                <td align="center"><img src="images/Projects/fig100.png" alt=""/></td>
-                              </tr>
-                              <tr>
-                                <td align="center">fig001</td>
-                                <td align="center">fig050</td>
-                                <td align="center">fig100</td>
-                              </tr>
-                              <tr>    
-                                <td align="center"><img src="images/Projects/fig150.png" alt=""/></td>
-                                <td align="center"><img src="images/Projects/fig200.png" alt=""/></td>
-                                <td align="center"><img src="images/Projects/fig250.png" alt=""/></td>
-                              </tr>
-                              <tr>
-                                <td align="center">fig150</td>
-                                <td align="center">fig200</td>
-                                <td align="center">fig250</td>
-                              </tr>
+                        <div id ="ekf">
+                            <h3 align = left>Extended Kalman Filter Localization (Dec 2011 – Feb 2012)</h3>
+                            <table border = "0">
+                                <tr>
+                                    <td align="center"><img src="images/Projects/fig001.png" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/fig050.png" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/fig100.png" alt=""/></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">frame 001</td>
+                                    <td align="center">frame 050</td>
+                                    <td align="center">frame 100</td>
+                                </tr>
+                                <tr>    
+                                    <td align="center"><img src="images/Projects/fig150.png" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/fig200.png" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/fig250.png" alt=""/></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">frame 150</td>
+                                    <td align="center">frame 200</td>
+                                    <td align="center">frame 250</td>
+                                </tr>
                             </table>
                         </div>
-                        
+
                         <div id ="er7">
-                            <h3 align=left>Controlled ER7 robot arm to grab and stack bricks. (2011)</h3>
+                            <h3 align = left>Controlled ER7 robot arm to grab and stack bricks. (2011)</h3>
                             <table border="0">
-                              <tr>
-                                <td align="center"><img src="images/Projects/ER7 bricks.jpg" alt=""/></td>
-                                <td align="center"><img src="images/Projects/ER7.jpg" alt=""/></td>
-                              </tr>
-                              <tr>
-                                <td align="center">ER7 bricks</td>
-                                <td align="center">ER7</td>
-                              </tr>
+                                <tr>
+                                    <td align="center"><img src="images/Projects/ER7 bricks.jpg" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/ER7.jpg" alt=""/></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">Detecting Bricks</td>
+                                    <td align="center">System Overview</td>
+                                </tr>
                             </table>
                         </div>
-                        
+
                         <div id ="maze">
-                            <h3 align=left>Maze Exploring by Pioneer 3DX (2011)?????????????????????</h3>
+                            <h3 align = left>Maze Exploring by Pioneer 3DX (2011)</h3>
                             <table border="0">
-                              <tr>
-                                <td align="center"><img src="images/Projects/maze.jpg" alt=""/></td>
-                                <td align="center"><img src="images/Projects/Pioneer 3DX.jpg" alt=""/></td>
-                              </tr>
-                              <tr>
-                                <td align="center">maze</td>
-                                <td align="center">Pioneer 3DX</td>
-                              </tr>
+                                <tr>
+                                    <td align="center"><img src="images/Projects/maze.jpg" alt=""/></td>
+                                    <td align="center"><img src="images/Projects/Pioneer 3DX.jpg" alt=""/></td>
+                                </tr>
+                                <tr>
+                                    <td align="center">maze</td>
+                                    <td align="center">Pioneer 3DX</td>
+                                </tr>
                             </table>
-                            <a target="_blank" href="http://markcsie.github.io/documents/RoboticsFinalProjectReport.pdf">Report paper</a>
+                            <a target="_blank" href="http://markcsie.github.io/documents/RoboticsFinalProjectReport.pdf">Report paper</a>      
                         </div>
-                        
                     </div>
                 </div>
             </section>
 
             <!-- Contact -->
-            <section id="contact" class="four">
+            <section id="contact" class="three">
                 <div class="container">
 
                     <header>
